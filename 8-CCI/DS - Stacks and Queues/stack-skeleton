@@ -1,0 +1,28 @@
+#include<iostream>
+
+using namespace std;
+
+class Stack {
+public:
+	vector<int> stk;
+	int top;
+	Stack() {
+		top = -1;
+	}
+	void push(int elem) {
+		stk.push_back(elem);
+		top++;
+	}
+	int pop() {
+		int ret = stl[top];
+		stk.erase(top--);
+		return ret;
+	}
+	int peek() {
+		return stk[top];
+	}	
+};
+
+int main() {
+	
+}
